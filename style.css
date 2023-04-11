@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 1500px;
+  }
+  
+  .crawl {
+    width: 100%;
+    transform-origin: 50% 100%;
+    transform-style: preserve-3d;
+    color: yellow;
+    text-align: center;
+    align-items: center;
+    white-space: pre-wrap;
+    font-size: 1.5rem;
+    max-width: 90%;
+  }
+  
+  .title h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .title h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  nav {
+    border-bottom: 1px solid black;
+}
+
+
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+    color: white;
+}
+
+.crumb {
+    display: inline-block;
+    color: yellow;
+}
+
+.crumb a {
+    color: yellow;
+}
+
+/* Ajoutez ceci dans le fichier styles.css */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  
+/* LIGTHSABER */
+
+  .scene {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .character {
+    position: relative;
+    width: 20px;
+    height: 50px;
+  }
+  
+  .lightsaber {
+    position: relative;
+    width: 5px;
+    height: 20px;
+    background-color: silver;
+  }
+  
+  .laser {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: blue;
+  }
+  
+  .character-2 .laser {
+    background-color: red;
+  }
+  
+  .spark {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+/* BB8 */
+
+body {
+    margin: 0;
+    background-color: black;
+  }
+  
+  .scene-bb8 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bb8 {
+    position: relative;
+  }
+  
+  .body {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: radial-gradient(circle at 50% 50%, #f0f0f0, #dfdfdf);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .body:before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    width: 70px;
+    height: 50px;
+    background-color: #d3d3d3;
+    border-radius: 30px;
+  }
+  
+  .head {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: radial-gradient(circle at 50% 100%, #f0f0f0, #dfdfdf);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .head:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 25px;
+    width: 10px;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+  }
